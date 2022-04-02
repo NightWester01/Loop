@@ -1,0 +1,374 @@
+
+*{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    font-family:'montserratregular','Arial',sans-serif;
+}
+.section{
+    width: 100%;
+}
+.menu__wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 10px;
+    align-items: center;
+}
+.header{
+    background-color:rgba(249, 246, 241, 1);
+    min-height: 40px;
+}
+.mainmenu__item{
+    justify-content: space-between;
+    margin: 0 10px;
+    padding: 15px 0;
+}
+.menu__link{
+    text-decoration: none;
+    padding: 15px 0;
+    color: black;
+}
+.menu__link:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.basket__list{
+    margin: 0 10px;
+}
+.basket__item{
+    padding: 5px 5px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+body{
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "montserratregular","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #000;
+    background-color: rgba(249, 246, 241, 1);
+}
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    /*border:1px solid black;*/
+    padding: 0 20px;
+    position: relative;
+}
+.banner{
+    margin-top: 90px;
+}
+.slider__button--prev{
+    left:-100px;
+}
+.slider__button--next{
+    right:-100px;
+}
+@media(max-width:1140px){
+    .container{
+        width: 100%;
+        padding: 0 30px;
+    }
+}
+@media(max-width:1326px){
+    .slider__button--prev{
+        left:0;
+    }
+    .slider__button--next{
+        right:0;
+    }
+}
+@media(max-width:768px){
+    .slider__wrapper{
+        display: none;
+    }
+    .slider__button{
+        display: none;
+    }
+    .header{
+        min-height: 90px;
+    }
+}
+@media(max-width:992px){
+    .menu__wrapper{
+        flex-wrap: wrap;
+    }
+    .logo{
+        order: -1;
+        width: 100%;
+    }
+}
+@media(max-width:824px){
+    .logo{
+        order: -1;
+        width: 70%;
+    }
+    .basket{
+        order: -1;
+        text-align: right;
+    }
+}
+@media(max-width:670px){
+    .basket,
+    .menu
+    {
+        display: none;
+    }
+}
+.navbar-toggler{
+    display: none;
+}
+@media(max-width:670px){
+    .basket,
+    .menu
+    {
+        display:none;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+}
+
+@media(max-width:600px){
+    .basket,
+    .menu
+    {
+        display: none;
+        width: 100%;
+    }
+    .navbar-toggler{
+        display: block;
+    }
+    .mainmenu__list{
+        flex-direction: column;
+    }
+}
+.slider__item{
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background:url(../img/running_shoes_PNG5823.png) no-repeat right center ;
+}
+.slider__text{
+    font-size: 30px;
+}
+.slider__big-text{
+    font-family: "montserratbold","Arial",sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.button_kros{
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: rgba(215, 179, 153, 1);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.2s;
+}
+.button_kros:hover{
+    color: black;
+    background: rgb(215, 179, 153, 1);
+    box-shadow: 0 0 10px;
+
+}
+.slider__item-price{
+    font-family: "montserratbold","Arial",sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.slider__price--old{
+    font-size: 24px;
+    text-decoration: line-through;
+}
+.slider__price--new{
+    font-size: 42px;
+    color: #d84033;
+}
+.slider__button{
+    position: absolute;
+    top: 50%;
+}
+
+.slider__wrapper{
+    position: relative;
+}
+.header-menu{
+    min-height: 90px;
+    padding-top: 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(249, 246, 241, 1);
+}
+.delivery{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.delivery__container{
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.dress__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p_text{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    font-size: 25px;
+}
+.dress__item{
+    position: relative;
+    text-align: right;
+    width: 25%;
+    height: 236px;
+}
+.dress__item_img{
+    width: 200px;
+ 
+}
+@media(max-width:1110px){
+    .dress__item{
+        width: 25%;
+    }
+}
+@media(max-width:768px){
+    .dress__item{
+        width:33%;
+    }
+}
+@media(max-width:576px){
+    .dress__item{
+        width: 100%;
+    }
+}
+@media(max-width:320px){
+    .dress__item{
+        width: 100%;
+    }
+}
+.section__men-women{
+    display: flex;
+}
+
+.men{
+    display: flex;
+    flex-direction: column;
+    left: 0px;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 250px;
+}
+.women{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 250px;
+}
+.men_women__img{
+    text-align: right;
+}
+.men__h2{
+    font-size: 24px;
+}
+.men__text{
+    font-size: 16px;
+}
+.women__h2{
+    font-size: 24px;
+}
+.women__text{
+    font-size: 16px;
+}
+@media(max-width:928px){
+    .section__men-women{
+        flex-direction: column;
+    }
+    .men,
+    .women{
+        width: 100%;
+    }
+}
+@media(max-width:576px){
+}
+@media(max-width:320px){
+}
+.delivery__h2{
+    font-size: 30px;
+    height: 23px;
+}
+.delivery__text{
+    font-size: 21px;
+    height: 69px;
+}
+.men-women_button{
+    display: block;
+    height: 40px;
+    width: 100px;
+    padding: 5px 10px;
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    transition: all 0.1s ease-out;
+}
+.men-women_button:hover{
+    background-color: burlywood;
+    font-size: 20px;
+}
+/*-----------------*/
+/*Кнопки, как лучше сделать*/
+.btn{
+    display: block;
+    height:30px;
+    width: 130px;
+    background-color: burlywood;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+}
+.btn:hover{
+    background-color:chartreuse;
+    font-size: 17px;
+}
+.bnt_like_a{
+    display: inline;
+    border:none;
+    background:none;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bnt_like_a:hover{
+    color: cornflowerblue;
+}
+/*-----------------*/
+.show{
+    display: block;
+}
